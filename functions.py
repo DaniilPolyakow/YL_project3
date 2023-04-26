@@ -34,7 +34,7 @@ logger = logging.getLogger(__name__)
 # Сохранение последнего запроса пользователя в текстовый файл
 async def save_request(city):
     with open("requests.txt", "a", encoding="utf8") as save_file:
-        print(city, file=save_file)
+        print(city, end="", file=save_file)
 
 
 # Удаление последнего запроса пользователя из текстового файла
